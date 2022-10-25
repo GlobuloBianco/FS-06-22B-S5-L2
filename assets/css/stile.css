@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* reset */
+* {padding: 0; margin: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+body {
+    background-color: #ff6f41;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #220e24;
+}
+
+/* ---------------------header--------------------- */
+
+header {
+    background-color: #eb2a5d;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px #b01e45;
+    margin-bottom: 1em;
+}
+
+/* ---------------------Main--------------------- */
+::placeholder {
+    color: rgb(250, 241, 241);
+}
+
+input, button {
+    background-color: #ffb44b;
+    border: 5px solid white;
+    box-shadow: 0 5px 5px #ffeb7d;
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 1em;
+}
+
+input {
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+button {
+	border-radius: 30px;
+	cursor: pointer;
+    margin: 1em;
+}
+
+button:hover {
+    animation: 1s ruota ease;
+}
+
+button:active {
+    transform: translateY(10px);
+    box-shadow: none;
+}
+  
+@keyframes ruota {
+    0% {transform: rotate(-3deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-8deg);}
+    60% {transform: rotate(3deg);}
+    90% {transform: rotate(-1deg);}
+    100% {transform: rotate(0);}
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.3em;
+}
